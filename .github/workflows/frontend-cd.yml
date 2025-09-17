@@ -35,9 +35,12 @@ on:
       aks_cluster_name:
         required: true
         type: string
+        default: '224917579'
       aks_resource_group:
         required: true
         type: string
+        default: 'deakinuni'
+
 
 jobs:
   deploy_frontend:
