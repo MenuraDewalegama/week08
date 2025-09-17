@@ -5,12 +5,20 @@ name: Main CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - dev
     paths:
       - 'backend/**'
       - 'frontend/**'
       - 'k8s/**'
       - '.github/workflows/**'
+  
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'k8s/**'
+      - '.github/workflows/**'
+
 jobs:
   run_backend_ci:
     name: Run Backend CI
