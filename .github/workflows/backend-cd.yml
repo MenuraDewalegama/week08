@@ -21,12 +21,15 @@ on:
       aks_cluster_name:
         required: true
         type: string
+        default: '224917579'
       aks_resource_group:
         required: true
         type: string
+        default: 'deakinuni'
       aks_acr_name:
         required: true
         type: string
+        default: '224917579'
     outputs:
       product_api_ip:
         description: "External IP of Product Service"
