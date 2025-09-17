@@ -39,6 +39,6 @@ jobs:
     with:
       aks_cluster_name: '224917579'
       aks_resource_group: 'deakinuni'
-      # product_api_ip: ${{ needs.deploy_backend.outputs.product_api_ip }}
-      # order_api_ip: ${{ needs.deploy_backend.outputs.order_api_ip }}
+      product_api_ip: ${{ needs.deploy_backend.outputs.product_api_ip }}
+      order_api_ip: ${{ needs.deploy_backend.outputs.order_api_ip }}
     secrets: inherit
